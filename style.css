@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root{
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Blue: hsl(228, 39%, 23%);
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Vary-Light-Gray: hsl(0, 0%, 98%);
+}
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    overflow-x: hidden;
+}
+header{
+    background-image: url(./images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head{
+    display: flex;
+    justify-content: space-evenly;
+}
+.st{
+    background-color: var(--Bright-Red);
+    color: var(--Vary-Light-Gray);
+    border-radius: 20px;
+    padding:  8px 20px;
+}
+@media (max-width:991px) {
+    .head{
+        flex-direction: column;
+    }
+}
+h1{
+    color: var(--Dark-Blue);
+}
+p{
+    color: var(--Dark-Grayish-Blue);
+}
+.nomber{
+    height: fit-content;
+    background-color: var(--Bright-Red);
+    color: var(--Vary-Light-Gray);
+    border-radius:15px;
+    padding: 5px 19px;
+}
+.img{
+    width: 70px;
+}
+.section-bot{
+    background-color: var(--Bright-Red);
+}
+.section-bot .st2{
+    color: var(--Bright-Red);
+    background-color: white;
+    border-radius: 18px;
+}
+.section-bot .st2:hover{
+    opacity: 0.9;
+}
+button:focus{
+    box-shadow: none !important;
+}
+.section-bot .title{
+    color: white;
+}
+footer{
+    background-color: var(--Very-Dark-Blue);
+    color: var(--Vary-Light-Gray);
+}
+footer div div div:hover,.logo path:hover{
+    color: var(--Bright-Red);
+    fill: var(--Bright-Red);
+    cursor: pointer;
+}
+footer input,footer button{
+    height: 40px;
+    border: none;
+    width:fit-content;
+    border-radius: 20px ;
+}
+footer input:focus{
+    outline: none;
+    outline: 1px solid red;
+    color: red;
+}
+.lg .icons a{
+    font-size: 25px ;
+    color: white;
+}
+.lg .icons a:hover{
+    color: var(--Bright-Red) !important;
+}
+.cards:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+input::placeholder{
+    font-size: 11px;
+}
